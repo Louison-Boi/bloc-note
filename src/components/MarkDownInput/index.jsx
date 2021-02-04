@@ -1,6 +1,8 @@
 import React from "react"
 
-const MarkDownInput = ({titleEnter, textEnter}) => {
+const MarkDownInput = ({titleEnter, textEnter, saveText}) => {
+
+
 
   return (
     <div className="card">
@@ -25,7 +27,7 @@ const MarkDownInput = ({titleEnter, textEnter}) => {
         </form>
       </div>
       <div>
-        <button type="submit">Sauvegarder</button>
+        <button onClick={saveText}> Save</button>
       </div>
     </div>
 
